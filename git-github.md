@@ -26,9 +26,11 @@
 `ssh-keygen -t rsa -b 4096 -C "email"` Configuramos clave ssh (necesaria para GitHub).
   -> Nos preguntara si queremos guardarla en el directorio /ssh/id_rsa y generara una clave publica y una privada, y como su nombre indica la llave privada NO debes mostrarla a nadie y la llave publica es la que usaremos posteriormente en GitHub.
   -> Luego nos pregunta si queremos darle una clave (recomendado), esto es para el uso de la clave ssh.
-`git config --global init.defaultBranch "nombre"` Con este comando cambiamos la configuracion de las branches iniciales por defecto.
+`git config --global init.defaultBranch "main"` Con este comando cambiamos la configuracion de las branches iniciales por defecto, a Git no le gusta la configuracion MASTER por defecto, asi que recomienda cambiarla a main.
 
 ## Comandos
 `git init` Iniciamos nuestro repositorio.
-  -> Al iniciar el repositorio nos dara una advertencia por el uso del repositorio MASTER, por ello nos pide que lo cambiemos, no es necesario, pero a la gente de Git no le gusta.
 `git status` Permite ver el estado de los cambios del repositorio.
+`git add "archivo"` Agregamos un archivo especifico.
+`git add .` Agregamos todos los archivos creados/modificados.
+NOTA: Agregar todos los archivos no es recomendable posterior a la primera vez, ya que esto puede conllevar a una brecha de seguridad o enviar cosas que no queriamos enviar.
