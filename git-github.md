@@ -34,3 +34,5 @@
 `git add "archivo"` Agregamos un archivo especifico.
 `git add .` Agregamos todos los archivos creados/modificados.
 NOTA: Agregar todos los archivos no es recomendable posterior a la primera vez, ya que esto puede conllevar a una brecha de seguridad o enviar cosas que no queriamos enviar.
+`git rm "archivo" --cached` Eliminamos lo que este en staging.
+NOTA: Tenemos la flag --force, para forzar esta eliminacion, pero no hay que usarlo a menos que sea estrictamente necesario.
